@@ -1,30 +1,30 @@
 .lead {
-	display: block;
-	margin: 2% auto;
-	width: 40%;
-	min-width: 200px;
+  display: block;
+  margin: 2% auto;
+  width: 40%;
+  min-width: 200px;
 }
 
 #hexagon {
-	margin: 4% 0;
-	text-align: center;
-	z-index: 1;
+  margin: 4% 0;
+  text-align: center;
+  z-index: 1;
 }
 
 .hexagon {
-	width: 30%;
-	min-width: 300px;
-	-webkit-animation-name:             rotate; 
-	-webkit-animation-duration:         20s; 
-	-webkit-animation-iteration-count:  infinite;
-	-webkit-animation-timing-function:  linear;
+  width: 30%;
+  min-width: 300px;
+  -webkit-animation-name:             rotate; 
+  -webkit-animation-duration:         20s; 
+  -webkit-animation-iteration-count:  infinite;
+  -webkit-animation-timing-function:  linear;
 }
 
 @-webkit-keyframes rotate {
-	from {
-		-webkit-transform: rotate(0deg);
-	}
-	to { 
-		-webkit-transform: rotate(359deg);
-	}
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to { 
+    -webkit-transform: rotate(359deg);
+  }
 }
