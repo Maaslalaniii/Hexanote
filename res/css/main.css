@@ -1,8 +1,10 @@
-.lead {
-  display: block;
-  margin: 2% auto;
-  width: 40%;
-  min-width: 200px;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#lead {
+  width: 750px;
 }
 
 #hexagon {
@@ -19,6 +21,47 @@
   -webkit-animation-iteration-count:  infinite;
   -webkit-animation-timing-function:  linear;
 }
+
+body {
+  background-color: #000;
+}
+
+.hexanote {
+  list-style: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.hexanote li {
+  display: inline-block;
+  margin-right: 50px;
+  font-family: Open Sans, Arial;
+  font-weight: 300;
+  font-size: 4em;
+  color: #fff;
+  opacity: 1;
+  transition: all 2.5s ease;
+}
+
+.hexanote li:last-child {
+  margin-right: 0;
+}
+
+.hexanote.hidden li {
+  opacity: 0;
+}
+
+.hexanote.hidden li:nth-child(1) { transform: translateX(-200px) translateY(-200px); }
+.hexanote.hidden li:nth-child(2) { transform: translateX(20px) translateY(100px); }
+.hexanote.hidden li:nth-child(3) { transform: translateX(-150px) translateY(-80px); }
+.hexanote.hidden li:nth-child(4) { transform: translateX(10px) translateY(-200px); }
+.hexanote.hidden li:nth-child(5) { transform: translateX(-300px) translateY(200px); }
+.hexanote.hidden li:nth-child(6) { transform: translateX(20px) translateY(-40px); }
+.hexanote.hidden li:nth-child(7) { transform: translateX(30px) translateY(200px); }
+.hexanote.hidden li:nth-child(8) { transform: translateX(60px) translateY(-200px); }
+
 
 @-webkit-keyframes rotate {
   from {
