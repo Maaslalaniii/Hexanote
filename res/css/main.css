@@ -7,12 +7,6 @@
   width: 750px;
 }
 
-#hexagon {
-  margin: 4% 0;
-  text-align: center;
-  z-index: 1;
-}
-
 body {
   background-color: #000;
 }
@@ -53,21 +47,10 @@ body {
 .hexanote.hidden li:nth-child(7) { transform: translateX(30px) translateY(200px); }
 .hexanote.hidden li:nth-child(8) { transform: translateX(60px) translateY(-200px); }
 
-
-@-webkit-keyframes rotate {
-  from {
-    -webkit-transform: rotate(0deg);
-  }
-  to { 
-    -webkit-transform: rotate(359deg);
-  }
-}
-
 .hexagon {
   width: 500px;
   height: auto;
   opacity: 0;
-
 }
 
 .hexagon-container {
