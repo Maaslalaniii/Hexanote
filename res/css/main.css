@@ -3,15 +3,18 @@
   padding: 0;
 }
 
-#lead {
-  width: 750px;
-}
-
 body {
   background-color: #000;
 }
 
+#lead {
+  max-width: 800px;
+  width: 75%;
+  min-width: 300px;
+}
+
 .hexanote {
+  text-align: center;
   list-style: none;
   position: absolute;
   left: 50%;
@@ -21,7 +24,8 @@ body {
 
 .hexanote li {
   display: inline-block;
-  margin-right: 50px;
+  margin-left: 25px;
+  margin-right: 25px;
   font-family: Open Sans, Arial;
   font-weight: 300;
   font-size: 4em;
@@ -48,12 +52,18 @@ body {
 .hexanote.hidden li:nth-child(8) { transform: translateX(60px) translateY(-200px); }
 
 .hexagon {
-  width: 500px;
+  position: absolute;
+  max-width: 450px;
+  width: 40%;
+  min-width: 320px;
   height: auto;
   opacity: 0;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .hexagon-container {
-  text-align: center;
-  margin-top: 15%
+  position: relative;
+  height: 100vh;
 }
