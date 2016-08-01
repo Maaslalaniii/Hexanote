@@ -1,21 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Hexanote</title>
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <title>Hexanote</title>
   <link rel="stylesheet" href="res/css/main.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="res/js/script.js"></script>
+
 </head>
 <body>
-  
-  <div class="row col-lg-12">
-    <img class="lead" src="res/img/logo.png">
-  </div>
-  <div class="row col-lg-12" id="hexagon">
-    <img src="res/img/hexagon.png" class="hexagon">
-  </div>
+
+  <ul id="lead" class="hexanote hidden">
+    <li>H</li>
+    <li>E</li>
+    <li>X</li>
+    <li>A</li>
+    <li>N</li>
+    <li>O</li>
+    <li>T</li>
+    <li>E</li>
+  </ul>
+
+  <div class="hexagon-container">
+    <svg class="hexagon" width="400px" height="400px" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" version="1.1">
+      <polygon class="polygon" style="stroke-width:2.5px" points="148,183.138438763306 52,183.138438763306 4,100 52,16.8615612366939 148,16.8615612366939 196,99.9999999999999 148,183.138438763306" />
+    </svg>
+</div>
 
 </body>
 </html>
