@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-
 }
 
 body {
@@ -27,8 +26,8 @@ body {
   display: inline-block;
   margin-right: 50px;
   font-family: Open Sans, Arial;
-  font-weight: 100;
-  font-size: 4em;
+  font-weight: 300;
+  font-size: 3em;
   color: #fff;
   opacity: 1;
   transition: all 2.5s ease;
@@ -51,17 +50,53 @@ body {
 .hexanote.hidden li:nth-child(7) { transform: translateX(30px) translateY(200px); }
 .hexanote.hidden li:nth-child(8) { transform: translateX(60px) translateY(-200px); }
 
+.subject-list {
+  width: 100%;
+  min-width: 300px;
+  text-align: center;
+  list-style: none;
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  bottom: 5%;
+  margin-bottom: 2%;
+  transform: translateX(-50%);
+  opacity: 0;
+}
+
+.subject-list li {
+  display: inline-block;
+  margin-right: 20px;
+  font-family: Open Sans, Arial;
+  font-weight: 700;
+  font-size: 1em;
+  color: #fff;
+  opacity: 1;
+  transition: all 2.5s ease;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.subject-list li:nth-child(1) { color: #1abc9c }
+.subject-list li:nth-child(2) { color: #f1c40f }
+.subject-list li:nth-child(3) { color: #e74c3c }
+.subject-list li:nth-child(4) { color: #2980b9 }
+.subject-list li:nth-child(5) { color: #9b59b6 }
+.subject-list li:nth-child(6) { color: #95a5a6 }
+
 .hexagon {
   display: inline-block;
   margin: 0 auto;
-  margin-top: 10%;
-  max-width: 350px;
+  margin-top: 5%;
+  max-width: 325px;
   width: 40%;
   min-width: 320px;
   height: auto;
   opacity: 0;
-  filter: hue-rotate(120deg);
   fill: #fff;
+  -webkit-animation:spin 10s linear infinite;
+  -moz-animation:spin 10s linear infinite;
+  animation:spin 10s linear infinite;
 }
 
 .hexagon-container {
@@ -74,4 +109,10 @@ body {
 
 .polygon {
   fill: #000;
+  stroke: #fff;
+  transition: stroke 1s;
 }
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
