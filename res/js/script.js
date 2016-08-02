@@ -1,23 +1,21 @@
 $(function() {
 
-  var hexagon = $('.hexagon');
-  var hexanote = $('.hexanote');
-  var lead = $('#lead');
-  var subjectList = $('.subject-list');
-
-
-  hexanote.delay(500).queue(function(){
-    hexanote.removeClass('hidden');
-    hexanote.dequeue();
+  $(".hexanote").delay(500).queue(function(){
+    $(this).removeClass("hidden");
+    $(this).dequeue();
+    hexColor('1abc9c', 'english');
   });
 
-  lead.delay(3000).animate({marginTop: '-=225px'}, {duration: 750});
-  hexagon.delay(4000).animate({opacity: '1'}, {duration: 750});
-  subjectList.delay(5000).animate({opacity: '1'}, {duration: 750});
-
+  $("#lead")        .delay(3000).animate({ marginTop: "-=225px"}, { duration: 750 });
+  $(".hexagon")     .delay(4000).animate({   opacity: "1"},       { duration: 750 });
+  $(".subject-list").delay(4000).animate({   opacity: "1"},       { duration: 750 });
 
 });
 
-function hexColor(color) {
-  $('.polygon').css("stroke", "#"+color);
+function hexColor(color, subject) {
+
+  $(".subject") .css("color",  "#fff");
+  $("#"+subject).css("color",  "#"+color);
+  $(".polygon") .css("stroke", "#"+color);
+
 }

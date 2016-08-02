@@ -1,40 +1,66 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
+  
+    <title>Hexanote</title>
+    <meta charset="UTF-8">
 
-	<title>Hexanote</title>
-	<link rel="stylesheet" href="res/css/main.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-	<script src="res/js/script.js"></script>
+    <link rel="stylesheet" href="res/css/main.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="res/js/script.js"></script>
+  
+  </head>
+  <body>
+    
+    <ul id="lead" class="hexanote hidden">
+      
+      <li>H</li>
+      <li>E</li>
+      <li>X</li>
+      <li>A</li>
+      <li>N</li>
+      <li>O</li>
+      <li>T</li>
+      <li>E</li>
+    
+    </ul>
 
-</head>
-<body>
+    <div class="hexagon-container">
+      
+      <svg class="hexagon" width="400px" height="400px" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <polygon class="polygon" style="stroke-width:2.5px" points="148,183.138438763306 52,183.138438763306 4,100 52,16.8615612366939 148,16.8615612366939 196,99.9999999999999 148,183.138438763306" />
+      </svg>
+    
+    </div>
 
-	<ul id="lead" class="hexanote hidden">
-		<li>H</li>
-		<li>E</li>
-		<li>X</li>
-		<li>A</li>
-		<li>N</li>
-		<li>O</li>
-		<li>T</li>
-		<li>E</li>
-	</ul>
+    <ul class="subject-list hidden">
+      
+      <li class="subject" id="english">
+        <a onclick="hexColor('1abc9c', 'english')">English</a>
+      </li>
+      
+      <li class="subject" id="french">
+        <a onclick="hexColor('f1c40f', 'french')">French</a>
+      </li>
+      
+      <li class="subject" id="econ">
+        <a onclick="hexColor('e74c3c', 'econ')">Economics</a>
+      </li>
+      
+      <li class="subject" id="science">
+        <a onclick="hexColor('2980b9', 'science')">Science</a>
+      </li>
+      
+      <li class="subject" id="math">
+        <a onclick="hexColor('9b59b6', 'math')">Mathematics</a>
+      </li>
+      
+      <li class="subject" id="art">
+        <a onclick="hexColor('95a5a6', 'art')">Art</a>
+      </li>
+    
+    </ul>   
 
-	<div class="hexagon-container">
-		<svg class="hexagon" width="400px" height="400px" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" version="1.1">
-			<polygon class="polygon" style="stroke-width:2.5px" points="148,183.138438763306 52,183.138438763306 4,100 52,16.8615612366939 148,16.8615612366939 196,99.9999999999999 148,183.138438763306" />
-		</svg>
-	</div>
-
-	<ul class="subject-list hidden">
-		<li><a onclick="hexColor('1abc9c')">English</a></li>
-		<li><a onclick="hexColor('f1c40f')">French</a></li>
-		<li><a onclick="hexColor('e74c3c')">Economics</a></li>
-		<li><a onclick="hexColor('2980b9')">Science</a></li>
-		<li><a onclick="hexColor('9b59b6')">Mathematics</a></li>
-		<li><a onclick="hexColor('95a5a6')">Art</a></li>
-	</ul>		
-
-</body>
+  </body>
 </html>
